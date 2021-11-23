@@ -1,9 +1,9 @@
-.header{background-color:rgb(77, 199, 189); 
+.header{background-color: rgb(67, 245, 185); 
     height: 13rem;
     width: 100%;
     padding: 0.5rem 1rem;  
     display: flex;
     justify-content: space-around;}
 
-.TitleHeader {font-size: 5em; padding-top:0.5em; position: absolute;  margin-left: auto; margin-right: auto;} 
-.SubHeader   {font-size: 2em; padding-top:4em; text-align: center;}
+.TitleHeader {position: absolute;  margin-left: auto; margin-right: auto; margin-top: -15em;} 
+.SubHeader   {position: absolute;  margin-left: auto; margin-right: auto;font-size: 1.7em; padding-top:5.1em; text-align: center;}
