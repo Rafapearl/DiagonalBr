@@ -1,4 +1,4 @@
-.header{background-color: rgb(67, 245, 185); 
+.header{background-color: #00BB2D; 
     height: 13rem;
     width: 100%;
     padding: 0.5rem 1rem;  
@@ -6,4 +6,4 @@
     justify-content: space-around;}
 
 .TitleHeader {position: absolute;  margin-left: auto; margin-right: auto; margin-top: -15em;} 
-.SubHeader   {position: absolute;  margin-left: auto; margin-right: auto;font-size: 1.7em; padding-top:5.1em; text-align: center;}
+.SubHeader   {position: absolute;  margin-left: auto; margin-right: auto;font-size: 1.7em; padding-top:5.1em; text-align: center; color:aliceblue}
