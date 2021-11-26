@@ -1,9 +1,25 @@
-.header{background-color: #00BB2D; 
-    height: 13rem;
-    width: 100%;
-    padding: 0.5rem 1rem;  
-    display: flex;
-    justify-content: space-around;}
+.header {
+  background-color: #00bb2d;
+  height: 13rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
 
-.TitleHeader { margin-left: auto; margin-right: auto; margin-top: -15em; width:920px; height: 711px }  
-.SubHeader   {position: absolute;  margin-left: auto; margin-right: auto;font-size: 1.7em; padding-top:5.1em; text-align: center; color:aliceblue} 
+.TitleHeader {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15em;
+  width: 920px;
+  height: 711px;
+}
+.SubHeader {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.7em;
+  padding-top: 5.1em;
+  text-align: center;
+  color: aliceblue;
+}
