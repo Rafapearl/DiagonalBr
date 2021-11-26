@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <form action="/back" method="post">
+      <button type="submit">Voltar</button>
+    </form>
+
+    <video width="720" height="540" controls preload="<%=src%>">
+      <source src="<%=src%>" type="video/mp4">
+      Seu navegador não suporta esse formato de mídia.
+    </video>
+  </main>
+</body>
+
+</html>

@@ -1,41 +1,83 @@
- .MainContainer{ 
-    border: 1px #2f2f2f solid;
-    background-color: white;  
-    margin-left: 17em; 
-    margin-right:17em; 
-    height: 100%;
-    align-items: center; text-align: center;
-    display: block;
-    padding-top: 3%;} 
-
-
- .Search {position: inside; margin-top: 1em;display: inline-block; margin-bottom:100%;} 
-.LabelSearch{font-size: 1.5em; text-align: center; font-weight: bold; color: rgb(80, 79, 79);}
-
-.URL-input{padding: 1.0em; padding-top: 0.5em; width: 90%; margin-top: 0.6em; margin-bottom: 1em; border-radius: 2em;background-color: rgb(216, 215, 215);}
-
-.URL-input::placeholder{text-align: center; font-size:1.5em; vertical-align: middle; padding-top:1em;}
-
-.convert-button{display: block; 
-    margin-left: auto; 
-    margin-right: auto; 
-    margin-bottom: 2em; 
-    margin-top: 1em; 
-    width: 15em; 
-    height: 3em;
-    border-radius:2em;
-    font-weight: 800;
-    font-size: 0.9vw;
-    
+.MainContainer {
+  border: 1px #2f2f2f solid;
+  background-color: white;
+  margin-left: 17em;
+  margin-right: 17em;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  display: block;
+  padding-top: 3%;
 }
 
-.URL-input:hover {background-color:aliceblue;}
-.URL-input:focus {background-color:aliceblue;}
+.Search {
+  position: inside;
+  margin-top: 1em;
+  display: inline-block;
+  margin-bottom: 100%;
+}
+.LabelSearch {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(80, 79, 79);
+}
 
+.URL-input {
+  padding: 1em;
+  padding-top: 0.5em;
+  width: 90%;
+  margin-top: 0.6em;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  background-color: rgb(216, 215, 215);
+}
 
-.convert-button:hover {cursor:pointer; background-color:rgb(77, 199, 189); transition: 1000ms; transform: scale(1.05);}
+.URL-input::placeholder {
+  text-align: center;
+  font-size: 1.5em;
+  vertical-align: middle;
+  padding-top: 1em;
+}
 
-.TutorialDiv {padding-top: 4em;}
-.TutorialTitle {font-size:1.5em;}
-.TutorialText {font-size: 1.3em; padding-top:0.9em;padding-bottom: 1.5em;}
-.TutorialVideo {padding-top:1.5em;} 
+.convert-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  width: 15em;
+  height: 3em;
+  border-radius: 2em;
+  font-weight: 800;
+  font-size: 0.9vw;
+}
+
+.URL-input:hover {
+  background-color: aliceblue;
+}
+.URL-input:focus {
+  background-color: aliceblue;
+}
+
+.convert-button:hover {
+  cursor: pointer;
+  background-color: rgb(77, 199, 189);
+  transition: 1000ms;
+  transform: scale(1.05);
+}
+
+.TutorialDiv {
+  padding-top: 4em;
+}
+.TutorialTitle {
+  font-size: 1.5em;
+}
+.TutorialText {
+  font-size: 1.3em;
+  padding-top: 0.9em;
+  padding-bottom: 1.5em;
+}
+.TutorialVideo {
+  padding-top: 1.5em;
+}
