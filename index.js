@@ -14,20 +14,29 @@ app.set("view engine", "ejs");
 
 let url = "";
 let title = "";
+let loaded = false;
 
 app.get("/", (req, res) => {
-  res.render("../views/index", { url });
+  res.render("../views/index", { url, src: `videos/${title}.mp4` });
+
+  setTimeout(() => {
+    url = "";
+    title = "";
+  }, 6000);
 });
 
 app.post("/", async (req, res) => {
   const { link } = req.body;
 
   if (!!link) {
-    let info = await ytdl.getInfo(link);
-    url = info.videoDetails.embed.iframeUrl;
-    //SUBSTITUI OS CARACTERES ESPECIAIS
-    title = info.videoDetails.title.replaceAll(/\W/g, "");
-    return ytdl(link).pipe(fs.createWriteStream(`public/videos/${title}.mp4`));
+    await ytdl.getInfo(link).then((info) => {
+      url = link.replace("watch?v=", "embed/");
+      //SUBSTITUI OS CARACTERES ESPECIAIS
+      title = info.videoDetails.title.replaceAll(/\W/g, "");
+      return ytdl(link).pipe(
+        fs.createWriteStream(`public/videos/${title}.mp4`)
+      );
+    });
   }
 
   res.redirect("/");
@@ -39,10 +48,6 @@ app.get("/video", (req, res) => {
 
 app.post("/back", (req, res) => {
   //DELETA O ARQUIVO AO RETORNAR À PÁGINA PRINCIPAL
-  fs.unlink(`public/videos/${title}.mp4`, (err) => {
-    if (err) throw err;
-    console.log("Arquivo deletado!");
-  });
 
   res.redirect("/");
 });
